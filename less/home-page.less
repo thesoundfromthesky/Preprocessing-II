@@ -27,11 +27,17 @@
         border-radius: 10px;
       }
     }
+
+    .media(
+      {flex-direction: column; .text-content,
+      .img-content{width: 100%;} .img-content{text-align: center;}}
+    );
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    .media({flex-direction: column-reverse});
 
     .text-content {
       padding-left: 1%;
@@ -47,6 +53,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    .media({width: 100%; padding: 0 20px;});
 
     img {
       border-radius: 10px;
@@ -69,5 +76,8 @@
         border-radius: 8px;
       }
     }
+    .media(
+      {flex-direction: column; .destination{width: 100%; padding: 0 50px;}}
+    );
   }
 } // home

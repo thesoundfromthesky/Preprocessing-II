@@ -11,3 +11,10 @@
     color:@c;
     background:@bg;
 }
+
+//mixin for media query
+.media(@content){
+    @media @mobile{
+        @content();
+    }
+}
