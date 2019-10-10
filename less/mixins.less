@@ -1,1 +1,20 @@
 // Mixins in here
+
+.flex(@direction:row) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+// @c font color
+// @bg background color
+.custom-btn(@c, @bg){
+    color:@c;
+    background:@bg;
+}
+
+//mixin for media query
+.media(@content){
+    @media @mobile{
+        @content();
+    }
+}

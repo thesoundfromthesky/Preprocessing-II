@@ -6,12 +6,19 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
+
+  background-image: linear-gradient(142deg, #f4a35b, #f4655b 31%, #d16098 65%, #ca3469);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
@@ -37,10 +44,26 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  .media({padding: 0 5px});
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
